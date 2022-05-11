@@ -23,7 +23,6 @@ class MonApplication{
   vector <defense *> mesDefense;  
 
   public: 
-    void avant_Init(); 
     void Init();
     void Loop(); 
 
