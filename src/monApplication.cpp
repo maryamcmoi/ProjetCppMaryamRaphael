@@ -73,46 +73,6 @@ void MonApplication::Init(){
 
   //mettre pin D3 à 0 
   digitalWrite(D3, LOW); 
-
-
-
-/*
-
-PARTIE LED 
-
-*/
-/*
-  //appel des constructeurs 
-  led * led1 = new led(1); 
-  //led * led2 = new led(2);
-  //led * led3 = new led(3);
-  //led * led4 = new led(4);
-
-  //utilisation vecteurs
-  mesLeds.push_back(led1); 
-
-*/
-/*
-
-PARTIE BOUTONS
-
-*/ 
-/*
-
-  //appel des constructeurs des elements essentiels (boutons, led, joueurs) 
-  button * ba1 = new button(1);  //attaquant 
-  button * bd1 = new button(2);  //defendeur 
-  //button * b3 = new button(3);
-  //button * b4 = new button(4);
-
-
-  //utilisation vecteurs 
-  mesBoutons.push_back(ba1); 
-  mesBoutons.push_back(bd1); 
-  //mesBoutons.push_back(b3); 
-  //mesBoutons.push_back(b4); 
-
-*/
 }
 
 void MonApplication::Loop(){
@@ -185,52 +145,6 @@ void MonApplication::Loop(){
 
 
   }
-
-  /*
-  //(*mesLeds[0]).allumer_led_pos_color(3, 0, 150, 0);
-  
-  bool val1 = (*mesBoutons[0]).get_button(); //val bouton attaquant 
-
-  if (val1==1) {//attaquant à appuyé sur bouton
-    //generation couleur aléatoire
-    int r=rand()%150;
-    int g=rand()%150;
-    (1000);delay        break; //sortir de la boucle 
-        }
-        else { //bouton défendeur non cliqué 
-          if (i==9) { //derniere position
-          (*mesLeds[0]).allumer_gagnant('a'); //'a' équivaut attaquant 
-          } 
-        }
-      }
-    delay(50); //régi vitesse du défilement
-    } 
-  }
-  */
-//compter les points ?? 
-
-   
-  //Serial.print("Val1 = \n");
-  //Serial.flush();
-  //Serial.println(val1);
-  //Serial.flush();
-
-  //Serial.print("\tVal2 = ");
-  //Serial.flush();
-  //Serial.println(val2);
-  //Serial.flush();
-
-  /*
-  Serial.print("\tVal3 = ");
-  Serial.flush();
-  Serial.println(val3);
-  */
-
-  /*
-  Serial.print("\tVal4 = ");
-  Serial.flush();
-  Serial.println(val4);
-  */
   
   delay(DIFF);
   
