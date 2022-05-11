@@ -10,7 +10,6 @@ void setup() {
   
   Serial.begin(9600); 
   while (!Serial);
-  //pinMode(D1, INPUT);
   app.Init();
   
 }
