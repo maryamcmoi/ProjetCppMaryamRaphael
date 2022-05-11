@@ -13,9 +13,6 @@ class button {
     //constructeur 
     button(int lane, int a); //ajouter si attaquant ou défendeur 
 
-    //initialisation des pins
-    //void init_pin(); 
-
     //val button 
     bool get_button(); //1 si appuyé 
   
