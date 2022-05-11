@@ -36,7 +36,7 @@ void MonApplication::Init(){
 
 
   lane *l_vide = new lane(0,NULL);
-  lane *l1 = new lane(1, (mesLeds[0]));//ld1); 
+  lane *l1 = new lane(1, (mesLeds[0])); 
   lane *l2 = new lane(2,(mesLeds[1])); 
   lane *l3 = new lane(3,(mesLeds[2]));
 
@@ -47,7 +47,7 @@ void MonApplication::Init(){
 
 
 
-  ball *b1 = new ball(DIFF,1,(mesLanes[0]));//l_vide);
+  ball *b1 = new ball(DIFF,1,(mesLanes[0]));
   ball *b2 = new ball(DIFF,1,(mesLanes[0]));  //2 boules lentes
 
   ball *b3 = new ball(DIFF,2,(mesLanes[0]));
@@ -79,11 +79,11 @@ void MonApplication::Loop(){
   Serial.println(score);
   if (score!=VIE)
   {
-  (*mesAttack[0]).get_sig();
-  (*mesDefense[0]).get_sig();
+    (*mesAttack[0]).get_sig();
+    (*mesDefense[0]).get_sig();
 
 
-  switch(next_available){
+    switch(next_available){
       case 1: 
           (*mesAttack[0]).lance_boule((mesBall[0]));
           next_available=2;
@@ -113,7 +113,7 @@ void MonApplication::Loop(){
           next_available=1;
           break;
 
-  }
+   }
   if ((*mesBall[0]).vivant()==1){
       score+=(*mesBall[0]).avancer();}
   if ((*mesBall[1]).vivant()==1)
